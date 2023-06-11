@@ -12,12 +12,12 @@
         <div class="container">
             <h2>Login InTo PBazzar</h2>
             <div class="login">
-            <input type="text" placeholder="Username" required /><br>
-             <input type="password" placeholder="Password" required />
+                <form>
+            <input type="text" id="user" placeholder="Username" required><br>
+             <input type="password" id="pass" placeholder="Password" required><br>
+             <input type="button"  value="Login" id="loginbutton" onclick="login()">
             </div>
-            <div class="button">
-                <button>Login</button>
-            </div>
+        </form>
             <div class="link">
                 <a href="./SignUp.html">Create new account</a>
                 <a href="./forget.html">Forget Password</a>
@@ -25,5 +25,7 @@
         </div>
         </div>
     </section>
+
+    <script src="./js/loginbutton.js"></script>
     </body>
 </html>

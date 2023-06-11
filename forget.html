@@ -3,6 +3,11 @@
 <html>
     <head>
      <style>
+
+      *{
+       
+        scroll-behavior: smooth;
+      }
         .box img {
           width:60px;
           height:60px;
@@ -26,6 +31,11 @@
         width: 80px;
         background-color: aquamarine;
       }
+
+      #submit{
+        background-color: blueviolet;
+        height: 30px;
+      }
      </style>
     <title>Reset Password</title>
     </head>
@@ -35,13 +45,15 @@
         <img src="./Images/Logo.jpg" alt="logo"/>
         </div>
         <div class="login">
-            <input type="text" placeholder="Enter Email id" required /><br>
-             <input type="password" placeholder="Enter new password" required /><br>
-             <input type="text" placeholder="OTP" required /><br>
+          <form>
+            <input type="text" id="email" placeholder="Enter Email id" required><br>
+             <input type="password" id="pass" placeholder="Enter new password" required><br>
+             <input id="submit" type="submit" onclick="forget()">
+            </form>
             </div>
-            <div class="button">
-                <button>Submit</button>
-            </div>
+            
         </section>
+
+        <script src="./js/loginbutton.js"></script>
     </body>
 </html>

@@ -46,18 +46,18 @@
             <label id="country">Country</label>
             <input type="text" id="country" required>
             <label id="state">State</label>
-            <input type="text" id="country" required>
+            <input type="text" id="state" required>
             <label id="City">City</label>
-            <input type="text" id="country" required><br>
+            <input type="text" id="city" required><br>
             <label id="country">Pin</label>
-            <input type="text" id="country" required>
+            <input type="text" id="pin" required>
             <label id="country">Street</label>
-            <input type="text" id="country" required>
+            <input type="text" id="stret" required>
           </form>
           <div class="payment">
             <label id="payment">Payment-Mode</label><br>
-            <input type="radio" name="pay">Cash on delivery</input>
-            <input type="radio" name="pay">Online</input>
+            <input type="radio" name="pay" id="pay">Cash on delivery</input>
+            <input type="radio" name="pay" id="pay">Online</input>
           </div>
           <div class="type">
             <label id="payment">Select-mode</label><br>
@@ -71,13 +71,14 @@
   
           </div>
           <div class="make">
-             <button>Make-payment</button>
-             <button id="cancel">Cancel</button>
+             <button onclick="payment()">Make-payment</button>
+             <button id="cancel" onclick="stop()">Cancel</button>
           </div>
         </div>
       </div>
 
-     
+     <script src="./js/buy.js"></script>
+    
 
   </body>
 </html>
